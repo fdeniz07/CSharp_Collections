@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="GercekZamanliGenericStackOrnegi.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <table style="width: 500px; border: 1px solid black">
+                <tr>
+                    <td colspan="2">
+                        <asp:Label ID="lblMessage" runat="server" ForeColor="Red">
+                        </asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 100px">
+                        <table style="border: 1px solid black; font-family: Arial">
+                            <tr>
+                                <td>
+                                    <b>Links</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="WebForm1.aspx">WebForm1 </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="WebForm2.aspx">WebForm2 </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="WebForm3.aspx">WebForm3 </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="WebForm4.aspx">WebForm4 </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="width: 400px">
+                        <asp:Button ID="btnBack" runat="server" Text="Back" OnClick="btnBack_Click" />
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+            </table>
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
